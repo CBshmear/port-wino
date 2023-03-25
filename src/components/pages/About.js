@@ -1,30 +1,66 @@
 import React from "react";
 const styles = {
   container: {
-    border: "solid 1px white",
-    borderRadius: 10,
-    margin: 15,
+    marginTop: "350px",
+    marginRight: 50,
+    padding: 15,
     display: "flex",
+    //width: 300,
+    //backgroundColor: "#A9757F",
+    flexWrap: "wrap",
+    //border: "solid white 1px",
+    background: "rgba(0,0,0,0.4)",
+    borderRadius: 10,
+    //flexDirection: "row-reverse",
+    justifyContent: "center",
+    border: "solid white 1px",
+  },
+  container2: {
+    marginTop: "100px",
+    height: "100px",
+    padding: 15,
+    display: "flex",
+    //width: 300,
+    //backgroundColor: "#A9757F",
+    flexWrap: "wrap",
+    //border: "solid white 1px",
+    background: "rgba(0,0,0,0.4)",
+    borderRadius: 10,
+    //flexDirection: "row-reverse",
+    justifyContent: "center",
   },
   text: {
     margin: 5,
+    color: "white",
+    fontSize: "25px",
+    fontFamily: "Roboto Slab",
+    //fontWeight: "bold",
+  },
+  h1: {
+    display: "flex",
+    justifyContent: "center",
+    color: "white",
+    fontFamily: "GT Walsheim",
+  },
+  h4: {
+    color: "white",
+    fontFamily: "League Spartan",
+    display: "block",
+  },
+
+  elementStyle: {
+    display: "flex",
+    flexDirection: "row-reverse",
   },
 };
 
 export default function About() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div style={styles.elementStyle}>
+      <h1 style={styles.h1}></h1>
       <div style={styles.container}>
-        <p style={styles.text}>
-          Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-          Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-          mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-          lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-          imperdiet. Praesent euismod mi justo, faucibus scelerisque risus
-          cursus in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit
-          at.
-        </p>
+        <h4 style={styles.h4}></h4>
+        <p style={styles.text}> Web Design, With Intent.</p>
       </div>
     </div>
   );

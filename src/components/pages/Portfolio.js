@@ -1,21 +1,75 @@
 import React from "react";
+import Project from "../Project";
+import Carousel from "react-material-ui-carousel";
 
-export default function Home() {
+const styles = {
+  container: {
+    border: "solid 1px white",
+    borderRadius: 10,
+    margin: 40,
+    display: "flex",
+    background: "rgba(0,0,0,0.4)",
+    borderRadius: 10,
+    boxShadow: "5px 10px",
+    color: "white",
+    width: "200px",
+  },
+  text: {
+    margin: 5,
+  },
+  h1: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  mainContainer: {
+    display: "flex",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+  },
+  card: {
+    background: "rgba(0,0,0,0.6)",
+    display: "flex",
+    color: "white",
+    flexWrap: "no-wrap",
+    alignItems: "center",
+    justifyContent: "center",
+    border: "solid white 1px",
+    padding: "30px",
+  },
+  carousel: {
+    display: "flex",
+    justifyContent: "center",
+
+    height: 200,
+  },
+  cardText: {
+    margin: 30,
+    padding: "20px",
+  },
+};
+
+export default function PortfolioList(props) {
+  const projects = [
+    {
+      title: "My Animal List",
+      description: "Animal Review Website",
+      link: "https://my-animal-list.herokuapp.com/",
+    },
+    {
+      title: "Destination Finder",
+      description: "Enter a city and get travel data!",
+      link: "https://bkorbsquare.github.io/Project-1/",
+    },
+    { title: "anothr title", description: "MERN", link: "url" },
+    { title: "anothr title", description: "MERN", link: "url" },
+    { title: "anothr title", description: "MERN", link: "url" },
+    { title: "anothr title", description: "MERN", link: "url" },
+  ];
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
-    </div>
+    <Carousel>
+      {projects.map((project, i) => (
+        <Project key={i} project={project} styles={styles} />
+      ))}
+    </Carousel>
   );
 }

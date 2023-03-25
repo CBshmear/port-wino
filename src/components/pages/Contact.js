@@ -1,22 +1,120 @@
 import React from "react";
 
+const styles = {
+  form: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
+  container: {
+    border: "solid 1px white",
+    borderRadius: 10,
+    margin: 15,
+    justifyContent: "center",
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "column",
+
+    width: "85%",
+    border: "solid white 1px",
+    background: "rgba(0,0,0,0.4)",
+    borderRadius: 10,
+  },
+  h1: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  input: {
+    margin: 10,
+    height: 40,
+    display: "flex",
+    flexWrap: "wrap",
+    border: "black solid 1px",
+    borderRadius: 10,
+  },
+  text: {
+    margin: 5,
+    color: "white",
+  },
+  button: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    width: 60,
+    margin: 5,
+    border: "black solid 1px",
+    borderRadius: 10,
+  },
+  inputMessage: {
+    display: "inline-block",
+    padding: "15px 10px",
+    lineHeight: "180%",
+    margin: 10,
+    border: "black solid 1px",
+    borderRadius: 10,
+  },
+  textBox: {
+    display: "flex",
+    justifyContent: "center",
+    border: "white solid 1px",
+    borderRadius: 10,
+    width: "fit-content",
+    background: "rgba(0,0,0,0.4)",
+    borderRadius: 10,
+    margin: 10,
+  },
+  formContainer: {
+    marginTop: "200px",
+    margin: "100px",
+    border: "solid white 1px",
+    width: "auto",
+    display: "flex",
+    justifyContent: "center",
+    background: "rgba(0,0,0,0.4)",
+    borderRadius: 10,
+  },
+};
+
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Me</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <h1 style={styles.h1}></h1>
+      <div style={styles.textBox}>
+        <p style={styles.text}>
+          If you have any questions or would like to inquire about employment,
+          feel free to use the contact form below!
+        </p>
+      </div>
+      <div style={styles.formContainer}>
+        <div style={styles.container}>
+          <form className="form" style={styles.form}>
+            <input
+              style={styles.input}
+              name="name"
+              type="text"
+              placeholder="name"
+            />
+
+            <input
+              style={styles.input}
+              name="email"
+              type="email"
+              placeholder="email"
+            />
+            <input
+              style={styles.inputMessage}
+              name="message"
+              type="text"
+              placeholder="message"
+              height="300px"
+            />
+            <button style={styles.button} type="button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

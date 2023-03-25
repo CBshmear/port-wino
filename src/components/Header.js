@@ -1,32 +1,49 @@
 import React from "react";
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
 const styles = {
   nav: {
+    alignItems: "center",
     justifyContent: "center",
+    fontSize: 18,
+    fontFamily: "GT Walsheim",
+    //border: "none",
+    color: "inherit",
   },
   headerText: {
-    textAlign: "left",
+    justifyContent: "start",
     fontSize: 50,
-    color: "dark-tan",
+    color: "white",
+    fontFamily: "Freight Display Pro",
+    marginBottom: "5px",
+    marginRight: "50px",
+
+    //borderBottom: "solid white 1px",
   },
-  header: {
-    backgroundImage:
-      "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.2lfiJdkGha3TxHf_LTuZiAHaB0%26pid%3DApi&f=1&ipt=bda70ef7036de158a1e74c927a44eafd48ddba03e720396fbf40bc42f1c6b1e9&ipo=images)",
+  container: {
+    display: "flex",
+    //backgroundColor: "#A6D9F7",
+    //backgroundImage:
+    // "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XfEBcLHxzv6ZZNsT3v0ZxwHaDe%26pid%3DApi&f=1&ipt=e7167465181121fdaef6129cb8b4d6fdbbd9c6b731fcf6e8cd31214086906a27&ipo=images)",
+    margin: 0,
+    padding: "10px",
+  },
+  link: {
+    color: "white",
+    backgroundColor: "transparent",
+    borderRadius: 10,
   },
 };
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div style={styles.header}>
+    <div style={styles.container}>
       <h1 style={styles.headerText}>CBshmear</h1>
       <ul className="nav nav-tabs" style={styles.nav}>
-        <li className="nav-item">
+        <li className="nav-item" style={styles.nav}>
           <a
+            style={styles.link}
             href="#about"
             onClick={() => handlePageChange("About")}
-            //  TODO: Add a comment explaining what this logic is doing
-
             className={currentPage === "About" ? "nav-link active" : "nav-link"}
           >
             About
@@ -34,10 +51,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
+            style={styles.link}
             href="#portfolio"
             onClick={() => handlePageChange("Portfolio")}
-            //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
             className={
               currentPage === "Portfolio" ? "nav-link active" : "nav-link"
             }
@@ -47,10 +63,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
+            style={styles.link}
             href="#resume"
             onClick={() => handlePageChange("Resume")}
-            //  TODO: Add a comment explaining what this logic is doing
-
             className={
               currentPage === "Resume" ? "nav-link active" : "nav-link"
             }
@@ -60,9 +75,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
+            style={styles.link}
             href="#contact"
-            //  TODO: Add a comment explaining what this logic is doing
-
             onClick={() => handlePageChange("Contact")}
             className={
               currentPage === "Contact" ? "nav-link active" : "nav-link"

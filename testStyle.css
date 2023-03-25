@@ -1,0 +1,11 @@
+.body {
+  background-color: rgb(215, 218, 221);
+}
+
+@media (max-width: 600px) {
+  .page {
+    background-repeat: no-repeat;
+    background-size: stretch;
+    background-position: center;
+  }
+}

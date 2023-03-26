@@ -13,7 +13,7 @@ const styles = {
     justifyContent: "start",
     fontSize: 50,
     color: "white",
-    fontFamily: "Freight Display Pro",
+    fontFamily: " Abril Fatface",
     marginBottom: "5px",
     marginRight: "50px",
 
@@ -21,6 +21,7 @@ const styles = {
   },
   container: {
     display: "flex",
+    justifyContent: "start",
     //backgroundColor: "#A6D9F7",
     //backgroundImage:
     // "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XfEBcLHxzv6ZZNsT3v0ZxwHaDe%26pid%3DApi&f=1&ipt=e7167465181121fdaef6129cb8b4d6fdbbd9c6b731fcf6e8cd31214086906a27&ipo=images)",

@@ -6,6 +6,7 @@ const styles = {
     flexWrap: "wrap",
     justifyContent: "center",
     flexDirection: "column",
+    width: "100px",
   },
   container: {
     border: "solid 1px white",

@@ -6,6 +6,8 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",
     width: 300,
+    background: "rgba(0,0,0,0.6)",
+    borderRadius: 10,
     //backgroundColor: "tan",
   },
   text: {

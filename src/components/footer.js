@@ -1,4 +1,5 @@
 import react from "react";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 const styles = {
   container: {
     display: "flex",
@@ -9,26 +10,26 @@ const styles = {
     position: "absolute",
   },
   links: {
-    display: "inline",
-    margin: 30,
+    margin: "10px",
+    padding: "10px",
     color: "white",
     fontSize: "20px",
     background: "rgba(0,0,0,0.4)",
     borderRadius: 10,
-    border: "solid white 1px",
+    //border: "solid white 1px",
   },
 };
 
 export default function Footer() {
   return (
     <div style={styles.container}>
-      <button style={styles.links} href="https://www.github.com/CBshmear">
-        GIT
-      </button>
+      <a style={styles.links} href="https://www.github.com/CBshmear">
+        <AiFillGithub />
+      </a>
 
-      <button style={styles.links} href="https://www.instagram.com/b.shmear/">
-        INSTA
-      </button>
+      <a style={styles.links} href="https://www.instagram.com/b.shmear/">
+        <AiFillInstagram />
+      </a>
     </div>
   );
 }

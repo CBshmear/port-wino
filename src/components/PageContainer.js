@@ -38,8 +38,7 @@ export default function PortfolioContainer() {
       // backgroundColor: "#A6D9F7",
     },
     body: {
-      backgroundImage:
-        "url(https://www.pixelstalk.net/wp-content/uploads/2016/06/High-Res-Wallpaper-HD.jpg)",
+      backgroundImage: "url(https://wallpapercave.com/wp/wp4546295.jpg)",
       //backgroundColor: "#A6D9F7",
       //color: "rgb(213, 214, 216)",
       height: "100vh",
@@ -49,10 +48,13 @@ export default function PortfolioContainer() {
       margin: 0,
       padding: "0px",
     },
+    header: {
+      left: " 0 !important",
+    },
   };
   return (
     <div style={styles.body}>
-      <div>
+      <div style={styles.header}>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
       </div>

@@ -1,7 +1,10 @@
 import React from "react";
+import { SideBar } from "@coreui/react";
 const styles = {
   container: {
-    marginTop: "350px",
+    bottom: "-400px",
+
+    position: "relative",
     marginRight: 50,
     padding: 15,
     display: "flex",
@@ -9,11 +12,11 @@ const styles = {
     //backgroundColor: "#A9757F",
     flexWrap: "wrap",
     //border: "solid white 1px",
-    background: "rgba(0,0,0,0.4)",
+    background: "rgba(0,0,0,0.6)",
     borderRadius: 10,
     //flexDirection: "row-reverse",
     justifyContent: "center",
-    border: "solid white 1px",
+    //border: "solid white 1px",
   },
   container2: {
     marginTop: "100px",
@@ -57,10 +60,9 @@ const styles = {
 export default function About() {
   return (
     <div style={styles.elementStyle}>
-      <h1 style={styles.h1}></h1>
       <div style={styles.container}>
         <h4 style={styles.h4}></h4>
-        <p style={styles.text}> Web Design, With Intent.</p>
+        <p style={styles.text}> Purpose Driven Web Design.</p>
       </div>
     </div>
   );

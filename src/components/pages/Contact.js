@@ -17,9 +17,9 @@ const styles = {
     flexWrap: "wrap",
     flexDirection: "column",
 
-    width: "85%",
+    width: "35%",
     border: "solid white 1px",
-    background: "rgba(0,0,0,0.4)",
+    background: "rgba(0,0,0,0.8)",
     borderRadius: 10,
   },
   h1: {
@@ -83,38 +83,37 @@ export default function Contact() {
       <h1 style={styles.h1}></h1>
       <div style={styles.textBox}>
         <p style={styles.text}>
-          If you have any questions or would like to inquire about employment,
-          feel free to use the contact form below!
+          If you have any questions or want to get together and throw rocks at
+          things, feel free to use the contact form below!
         </p>
       </div>
-      <div style={styles.formContainer}>
-        <div style={styles.container}>
-          <form className="form" style={styles.form}>
-            <input
-              style={styles.input}
-              name="name"
-              type="text"
-              placeholder="name"
-            />
 
-            <input
-              style={styles.input}
-              name="email"
-              type="email"
-              placeholder="email"
-            />
-            <input
-              style={styles.inputMessage}
-              name="message"
-              type="text"
-              placeholder="message"
-              height="300px"
-            />
-            <button style={styles.button} type="button">
-              Submit
-            </button>
-          </form>
-        </div>
+      <div style={styles.container}>
+        <form className="form" style={styles.form}>
+          <input
+            style={styles.input}
+            name="name"
+            type="text"
+            placeholder="name"
+          />
+
+          <input
+            style={styles.input}
+            name="email"
+            type="email"
+            placeholder="email"
+          />
+          <input
+            style={styles.inputMessage}
+            name="message"
+            type="text"
+            placeholder="message"
+            height="300px"
+          />
+          <button style={styles.button} type="button">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );

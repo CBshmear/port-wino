@@ -33,7 +33,7 @@ export default function PortfolioContainer() {
       position: "absolute",
       bottom: 0,
       width: "100%",
-      left: "40%",
+      left: "45%",
 
       // backgroundColor: "#A6D9F7",
     },

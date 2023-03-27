@@ -5,7 +5,7 @@
 
 ## Description
 
-Description
+Everyone needs a place to showcase their works. This is a fully functioning react app that showcases me! I'm using react components to render different portions of the page and the "Carousel" package to display my previous works. I had some trouble making the carousel function but after some documentation, all is well!
 
 ## Table of Contents 
 
@@ -26,8 +26,8 @@ Use command "NPM RUN START" from terminal
 
 ## Credits
 
-
-
+I referenced previous homework assignments for the conditional rendering of the pages.
+Also referenced react documentation frequently  https://legacy.reactjs.org/docs/getting-started.html 
 
 ## License
 

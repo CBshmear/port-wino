@@ -15,6 +15,7 @@ Everyone needs a place to showcase their works. This is a fully functioning reac
 - [Usage](#Usage)
 - [Credits](#Credits)
 - [License](#License)
+- [Questions](#Questions)
 
 ## Installation
 

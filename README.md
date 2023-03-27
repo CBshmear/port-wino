@@ -20,6 +20,7 @@ Description
 Run command "NPM Install" from terminal
 
 ## Usage
+Here is a link to the deployed page:  https://cbshmear.github.io/port-wino/ 
 
 Use command "NPM RUN START" from terminal
 

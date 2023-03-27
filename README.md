@@ -6,6 +6,7 @@
 ## Description
 
 Everyone needs a place to showcase their works. This is a fully functioning react app that showcases me! I'm using react components to render different portions of the page and the "Carousel" package to display my previous works. I had some trouble making the carousel function but after some documentation, all is well!
+*The link to download my resume is fully functioning, but I dont have a pdf resume at the moment so it will download a file that cannot be opened
 
 ## Table of Contents 
 

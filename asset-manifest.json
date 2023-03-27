@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/port-wino/static/css/main.10fb7b5f.css",
+    "main.js": "/port-wino/static/js/main.ed29f17e.js",
+    "index.html": "/port-wino/index.html",
+    "main.10fb7b5f.css.map": "/port-wino/static/css/main.10fb7b5f.css.map",
+    "main.ed29f17e.js.map": "/port-wino/static/js/main.ed29f17e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10fb7b5f.css",
+    "static/js/main.ed29f17e.js"
+  ]
+}

@@ -2,6 +2,7 @@
   "name": "port-wino",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://CBshmear.github.io/port-wino",
   "dependencies": {
     "@coreui/coreui": "^4.2.6",
     "@coreui/react": "^4.7.0",
@@ -22,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

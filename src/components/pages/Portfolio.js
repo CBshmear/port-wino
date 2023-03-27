@@ -71,10 +71,26 @@ export default function PortfolioList(props) {
       description: "Enter a city and get travel data!",
       link: "https://bkorbsquare.github.io/Project-1/",
     },
-    { title: "Unfriended API", description: "MERN", link: "url" },
-    { title: "README Generator", description: "MERN", link: "url" },
-    { title: "", description: "MERN", link: "url" },
-    { title: "anothr title", description: "MERN", link: "url" },
+    {
+      title: "Unfriended API",
+      description: "MERN",
+      link: "https://github.com/CBshmear/Unfriended",
+    },
+    {
+      title: "README Generator",
+      description: "MERN",
+      link: "https://github.com/CBshmear/quick-gen",
+    },
+    {
+      title: "Employ Promptly",
+      description: "MERN",
+      link: "https://github.com/CBshmear/employ-promptly",
+    },
+    {
+      title: "Tech Blog",
+      description: "MERN",
+      link: "https://boiling-template15.herokuapp.com/",
+    },
   ];
   return (
     <div style={styles.wholeCar}>

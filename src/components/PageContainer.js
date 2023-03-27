@@ -38,8 +38,8 @@ export default function PortfolioContainer() {
       // backgroundColor: "#A6D9F7",
     },
     body: {
-      backgroundImage: "url(https://wallpapercave.com/wp/wp4546295.jpg)",
-      //backgroundColor: "#A6D9F7",
+      //backgroundImage: "url(https://wallpapercave.com/wp/wp4546295.jpg)",
+      backgroundColor: "rgb(145, 147, 148)",
       //color: "rgb(213, 214, 216)",
       height: "100vh",
       backgroundRepeat: "no-repeat",

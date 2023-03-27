@@ -20,6 +20,9 @@ Everyone needs a place to showcase their works. This is a fully functioning reac
 Run command "NPM Install" from terminal
 
 ## Usage
+<img width="958" alt="image" src="https://user-images.githubusercontent.com/112667575/228051837-eb4bf63a-1d2f-435d-a761-a7599cfe193d.png">
+
+
 Here is a link to the deployed page:  https://cbshmear.github.io/port-wino/ 
 
 Use command "NPM RUN START" from terminal
